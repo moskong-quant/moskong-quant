@@ -29,10 +29,21 @@ Most of my projects originate from **failed ideas, observed market inefficiencie
 - **Jupiter SDK / API** (execution routing)
 - **REST & WebSocket APIs**
 - **Docker** (reproducible environments)
-
+* **Machine Learning & Data:** XGBoost, Pandas, Numpy
+* **High-Performance Computing:** Numba (CUDA/GPU Acceleration)
+* **TradFi Integration:** MetaTrader 5 API (FX Execution)
 ---
 
 ## 🚀 Selected Projects
+
+### 🔹 Sniper v3.0: FX Mean Reversion Engine ([Sniper-v3-Mean-Reversion-GPU](https://github.com/moskong-quant/Sniper-v3-Mean-Reversion-GPU))
+A high-performance quantitative trading system for EURUSD utilizing GPU computing and probabilistic AI.
+
+* **GPU Parallel Computing:** Processed 4,000,000+ rows of M1 data in seconds using Numba/CUDA.
+* **Probabilistic Filtering:** XGBoost model acts as a gatekeeper to filter out low-probability trades (requiring >70% confidence).
+* **Execution First:** Applied dynamic volatility-based exits (3.5x TP / 1.5x SL ATR) and a strict 6-minute time barrier.
+* **Risk Validated:** Survived 5,000 Monte Carlo simulations to ensure anti-fragility against market regime shifts.
+* **Status:** Forward testing on live Cent accounts to measure real-world slippage and execution latency.
 
 ### 🔹 EMA Trend Crossover (`src6_EMA_Trend_Crossover`)
 A classic trend-following strategy used as a **baseline research framework**.
