@@ -1,103 +1,79 @@
 # 👋 Hi, I'm Moskong
 
-**Quantitative Trader | Trading Systems Developer (Crypto / DeFi)**  
-Python • Async Systems • Arbitrage • Solana • On-chain Data
-
----
+**Quantitative Developer | Trading Systems Architect (TradFi / DeFi)**
+`Python` • `GPU Accelerated Computing` • `Async Systems` • `Market Microstructure`
 
 ## 🧠 About Me
 
-I am a self-driven quantitative trader and trading systems developer with a strong focus on **crypto and DeFi markets**.  
-My work sits at the intersection of **market microstructure, execution engineering, and risk-aware strategy design**.
+I am a self-driven quantitative developer and systems architect with a strong focus on building **high-performance execution engines** across FX, Crypto, and DeFi markets. 
 
-Rather than optimizing for hype or backtest vanity metrics, I prioritize:
+My work sits at the intersection of **market microstructure, execution engineering, and risk-aware strategy design**. Rather than optimizing for hype or backtest vanity metrics, I prioritize:
+- **Realistic execution assumptions** (Slippage, latency, spread dynamics)
+- **Anti-fragile risk frameworks** (Circuit breakers, heartbeat monitoring)
+- **Clear decision rules and technical auditing** (Preventing repainting & forward-looking biases)
+- **Post-mortem driven system improvement**
 
-- Realistic execution assumptions  
-- Liquidity & slippage awareness  
-- Clear decision rules and failure analysis  
-- Post-mortem driven system improvement  
-
-Most of my projects originate from **failed ideas, observed market inefficiencies, and infrastructure pain points** encountered during live experimentation.
-
----
+Most of my projects originate from *failed ideas*, observed market inefficiencies, and infrastructure pain points encountered during live experimentation.
 
 ## 🧰 Core Tech Stack
 
-- **Python** (AsyncIO, data pipelines, strategy logic)
-- **Solana / DeFi** (Raydium, on-chain liquidity pools)
-- **Arbitrage & Market Neutral Strategies**
-- **Jupiter SDK / API** (execution routing)
-- **REST & WebSocket APIs**
-- **Docker** (reproducible environments)
-* **Machine Learning & Data:** XGBoost, Pandas, Numpy
-* **High-Performance Computing:** Numba (CUDA/GPU Acceleration)
-* **TradFi Integration:** MetaTrader 5 API (FX Execution)
+- **Architecture & Trading:** Python (AsyncIO, data pipelines), Docker (reproducible environments)
+- **High-Performance Computing:** Numba (CUDA / GPU Acceleration)
+- **TradFi Integration:** MetaTrader 5 API (Multi-account FX Execution)
+- **Machine Learning & Data:** XGBoost, Pandas, Numpy, Parquet
+- **Crypto / DeFi Ecosystem:** Solana (Raydium), Jupiter SDK, REST & WebSocket APIs, Arbitrage Systems
+
 ---
 
 ## 🚀 Selected Projects
 
-### 🔹 Sniper v3.0: FX Mean Reversion Engine ([Sniper-v3-Mean-Reversion-GPU](https://github.com/moskong-quant/Sniper-v3-Mean-Reversion-GPU))
-A high-performance quantitative trading system for EURUSD utilizing GPU computing and probabilistic AI.
+### 🔹 Quant-Fleet Execution Engine (Quant-Fleet-Execution-Engine-src16)
+*A production-grade, multi-account quantitative trading system prioritizing architectural stability and latency awareness.*
+- **System Architecture:** Engineered a folder-segregated execution model allowing multiple MetaTrader 5 terminals to run in isolation.
+- **GPU-Accelerated Backtesting:** Leveraged Numba (CUDA) to process millions of rows of M1 data, reducing grid search times from hours to seconds.
+- **Risk Engineering:** Integrated a Global Circuit Breaker (Max Drawdown halt) and hourly Heartbeat monitoring for 24/7 reliability.
+- **Technical Auditing:** Resolved the "Repainting Paradox" via strict candle-close verification logic.
 
-* **GPU Parallel Computing:** Processed 4,000,000+ rows of M1 data in seconds using Numba/CUDA.
-* **Probabilistic Filtering:** XGBoost model acts as a gatekeeper to filter out low-probability trades (requiring >70% confidence).
-* **Execution First:** Applied dynamic volatility-based exits (3.5x TP / 1.5x SL ATR) and a strict 6-minute time barrier.
-* **Risk Validated:** Survived 5,000 Monte Carlo simulations to ensure anti-fragility against market regime shifts.
-* **Status:** Forward testing on live Cent accounts to measure real-world slippage and execution latency.
+### 🔹 Sniper v3.0: FX Mean Reversion Engine (Sniper-v3-Mean-Reversion-GPU)
+*A high-performance quantitative trading system for EURUSD utilizing GPU computing and probabilistic AI.*
+- **GPU Parallel Computing:** Processed 4,000,000+ rows of M1 data in seconds using Numba/CUDA.
+- **Probabilistic Filtering:** XGBoost model acts as a gatekeeper to filter out low-probability trades (>70% confidence required).
+- **Execution First:** Applied dynamic volatility-based exits (3.5x TP / 1.5x SL ATR) and a strict 6-minute time barrier.
+- **Risk Validated:** Survived 5,000 Monte Carlo simulations to ensure anti-fragility against market regime shifts.
 
-### 🔹 EMA Trend Crossover (`src6_EMA_Trend_Crossover`)
-A classic trend-following strategy used as a **baseline research framework**.
+### 🔹 Harvest Arbitrage (src10_Harvest_Arbitrage)
+*A multi-layer crypto arbitrage research & monitoring system.*
+- Spot ↔ Perpetual basis analysis across CEX/DEX venues.
+- On-chain price derivation from Raydium pools (Solana).
+- *Outcome:* Exposed real-world constraints (thin liquidity, execution latency, infrastructure fragility). Sub-strategies intentionally terminated post-mortem—**discipline over bias**.
 
-- Full backtesting pipeline
-- Parameter sensitivity analysis
-- Risk & drawdown evaluation
-- Designed to validate discipline, not curve-fitting
-
-> Purpose: Establish a robust foundation before pursuing complex strategies.
-
----
-
-### 🔹 Harvest Arbitrage (`src10_Harvest_Arbitrage`)
-A multi-layer crypto arbitrage research & monitoring system.
-
-- Spot ↔ Perpetual basis analysis
-- Cross-venue price monitoring (CEX / DEX)
-- Slippage, liquidity depth, and execution cost awareness
-- On-chain price derivation from Raydium pools (Solana)
-
-This project exposed real-world constraints such as:
-- Thin liquidity
-- Execution latency
-- Basis instability
-- Infrastructure fragility
-
-> Some sub-strategies were intentionally **terminated** after post-mortem analysis  
-> — discipline over bias.
+### 🔹 EMA Trend Crossover (src6_EMA_Trend_Crossover)
+*A classic trend-following strategy used as a baseline research framework.*
+- Full backtesting pipeline with parameter sensitivity analysis and drawdown evaluation.
+- *Purpose:* Establish a robust foundation and validate discipline before pursuing complex strategies.
 
 ---
 
 ## 📊 Research & Development Philosophy
 
-- **No trade is better than a bad trade**
-- If costs > expected edge → do not execute
-- Strategies must survive *execution reality*, not just backtests
-- Failure logs are as valuable as profitable runs
+> *"No trade is better than a bad trade."*
+- If costs > expected edge → do not execute.
+- Strategies must survive **execution reality**, not just backtests.
+- Failure logs are as valuable as profitable runs.
 
----
+## 🎯 Current Focus
 
-## 🎯 Current Focus (Next 6 Months)
+Seeking roles where engineering rigor meets financial markets:
+- **System Analyst / Trading Systems Architect**
+- **Quantitative Developer**
+- **Algorithmic Trading Engineer**
 
-- Junior Quantitative Trader  
-- Trading Systems Developer  
-- Crypto Quant / Research-Oriented Roles  
-
-Actively building:
-- Automated execution engines
-- Low-latency market monitoring
-- Robust arbitrage infrastructure
+*Actively building: High-availability execution fleets, low-latency market monitoring, and cross-market infrastructure.*
 
 ---
 
 ## 📫 Contact
 
-- GitHub: https://github.com/moskong-quant
+- **LinkedIn:** [Supayos Phumchaiya](https://www.linkedin.com/in/supayos-phumchaiya-40b4033b0)
+- **Email:** supayos.phum@gmail.com
+- **GitHub:** [moskong-quant](https://github.com/moskong-quant)
