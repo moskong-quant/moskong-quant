@@ -36,7 +36,7 @@ Most of my projects originate from *failed ideas*, observed market inefficiencie
 - **Risk Engineering:** Integrated a Global Circuit Breaker (Max Drawdown halt) and hourly Heartbeat monitoring for 24/7 reliability.
 - **Technical Auditing:** Resolved the "Repainting Paradox" via strict candle-close verification logic.
 
-### 🔹 [Sniper v3.0: FX Mean Reversion Engine](https://github.com/moskong-quant/Sniper-v3-Mean-Reversion-GPU)
+### 🔹 [Sniper v3.0: FX Mean Reversion Engine(src9)](https://github.com/moskong-quant/Sniper-v3-Mean-Reversion-GPU)
 *A high-performance quantitative trading system for EURUSD utilizing GPU computing and probabilistic AI.*
 - **GPU Parallel Computing:** Processed 4,000,000+ rows of M1 data in seconds using Numba/CUDA.
 - **Probabilistic Filtering:** XGBoost model acts as a gatekeeper to filter out low-probability trades (>70% confidence required).
