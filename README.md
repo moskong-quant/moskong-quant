@@ -23,7 +23,7 @@ Most of my projects originate from *failed ideas*, observed market inefficiencie
 - **High-Performance Computing:** Numba (CUDA / GPU Acceleration)
 - **TradFi Integration:** MetaTrader 5 API (Multi-account FX Execution)
 - **Machine Learning & Data:** XGBoost, Pandas, Numpy, Parquet
-- **Crypto / DeFi Ecosystem:** Solana (Raydium), Jupiter SDK, REST & WebSocket APIs, Arbitrage Systems
+- **Crypto / DeFi Ecosystem:** Hyperliquid L1 (App-chain DEX), Solana (Raydium), Jupiter SDK, REST & WebSocket APIs
 
 ---
 
@@ -43,11 +43,11 @@ Most of my projects originate from *failed ideas*, observed market inefficiencie
 - **Execution First:** Applied dynamic volatility-based exits (3.5x TP / 1.5x SL ATR) and a strict 6-minute time barrier.
 - **Risk Validated:** Survived 5,000 Monte Carlo simulations to ensure anti-fragility against market regime shifts.
 
-### 🔹 Harvest Arbitrage (src10_Harvest_Arbitrage)
-*A multi-layer crypto arbitrage research & monitoring system.*
-- Spot ↔ Perpetual basis analysis across CEX/DEX venues.
-- On-chain price derivation from Raydium pools (Solana).
-- **Outcome:** Exposed real-world constraints (thin liquidity, execution latency, infrastructure fragility). Sub-strategies intentionally terminated post-mortem—**discipline over bias**.
+### 🔹 [Harvest Arbitrage Engine (src10)](https://github.com/moskong-quant/Harvest-Arbitrage-Engine-src10)
+*An AI-orchestrated R&D project focused on CEX/DEX arbitrage infrastructure.*
+- **Architectural Pivot:** Initially explored Solana CLMM binary decoding, but post-mortem analysis revealed an insurmountable latency disadvantage. Strategically pivoted to a latency-aware architecture focusing strictly on Hyperliquid L1 and Binance.
+- **Risk Engineering:** Implemented a multi-layered risk framework featuring dynamic circuit breakers, a "Dust Reverter," and "Ghost Book" stale data protection.
+- **Outcome:** Exposed real-world constraints like thin liquidity traps and WebSocket latency spikes. Sub-strategies showing negative expectancy after real-world slippage factoring were intentionally terminated—**discipline over bias**.
 
 ### 🔹 EMA Trend Crossover (src6_EMA_Trend_Crossover)
 *A classic trend-following strategy used as a baseline research framework.*
