@@ -1,28 +1,28 @@
 # 👋 Hi, I'm Moskong
 
-**Quantitative Developer | Trading Systems Architect (TradFi / DeFi)**
-`Python` • `GPU Accelerated Computing` • `Async Systems` • `Market Microstructure`
+**Proprietary FX Trader | Quantitative System Architect**
+`Python` • `GPU Accelerated Computing` • `Async Systems` • `Risk-First Engineering`
 
 ---
 
 ## 🧠 About Me
-I am a self-driven quantitative developer and systems architect with a strong focus on building **high-performance execution engines** across FX, Crypto, and DeFi markets. 
+I am a **Veteran FX Trader evolved into a Quantitative Systems Architect**. After 13 years of navigating global markets and experiencing extreme market regimes (like the AUD/CHF Flash crash and FTX collapse), I transitioned from discretionary trading to fully automated, AI-orchestrated execution.
 
-My work sits at the intersection of **market microstructure, execution engineering, and risk-aware strategy design**. Rather than optimizing for hype or backtest vanity metrics, I prioritize:
-- **Realistic execution assumptions** (Slippage, latency, spread dynamics)
+I don't build systems to chase vanity backtest metrics. I build them to survive. My work sits at the intersection of **market microstructure, execution engineering, and risk-aware strategy design**, prioritizing:
 - **Anti-fragile risk frameworks** (Circuit breakers, heartbeat monitoring)
+- **Realistic execution assumptions** (Slippage, latency, spread dynamics)
 - **Clear decision rules and technical auditing** (Preventing repainting & forward-looking biases)
-- **Post-mortem driven system improvement**
+- **AI-Orchestrated Prototyping** (Rapid development with 100% human oversight on core logic)
 
-Most of my projects originate from *failed ideas*, observed market inefficiencies, and infrastructure pain points encountered during live experimentation.
+Most of my projects originate from *failed ideas*, "Market Scars," and infrastructure pain points encountered during live proprietary trading.
 
 ---
 
 ## 🧰 Core Tech Stack
-- **Architecture & Trading:** Python (AsyncIO, data pipelines), Docker (reproducible environments)
+- **Architecture & Trading:** Python (Advanced AsyncIO, data pipelines), Docker (reproducible environments)
 - **High-Performance Computing:** Numba (CUDA / GPU Acceleration)
 - **TradFi Integration:** MetaTrader 5 API (Multi-account FX Execution)
-- **Machine Learning & Data:** XGBoost, Pandas, Numpy, Parquet
+- **Machine Learning & Data:** XGBoost, Pandas, SQL, Parquet
 - **Crypto / DeFi Ecosystem:** Hyperliquid L1 (App-chain DEX), Solana (Raydium), Jupiter SDK, REST & WebSocket APIs
 
 ---
@@ -56,21 +56,21 @@ Most of my projects originate from *failed ideas*, observed market inefficiencie
 
 ---
 
-## 📊 Research & Development Philosophy
+## 📊 Research & Development Philosophy: "Market Scars"
 > *"No trade is better than a bad trade."*
 - If costs > expected edge → do not execute.
 - Strategies must survive **execution reality**, not just backtests.
-- Failure logs are as valuable as profitable runs.
+- Failure logs from past liquidations are my most valuable data points for infrastructure improvement.
 
 ---
 
 ## 🎯 Current Focus
-Seeking roles where engineering rigor meets financial markets:
-- **System Analyst / Trading Systems Architect**
-- **Quantitative Developer**
-- **Algorithmic Trading Engineer**
+Seeking to transition 13 years of independent market experience into an institutional environment. I aim to leverage my failure-driven development approach and execution rigor to protect and grow enterprise capital. 
 
-*Actively building: High-availability execution fleets, low-latency market monitoring, and cross-market infrastructure.*
+Targeting roles where engineering meets financial markets:
+- **Proprietary FX Trader**
+- **System Analyst / Trading Systems Architect**
+- **Quantitative Analyst / Developer**
 
 ---
 
